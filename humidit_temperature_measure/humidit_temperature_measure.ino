@@ -29,7 +29,7 @@ void setup() {
 void send_to_server(float temperature, float humidity,float heat_index){
   // print to serial monitor console
   Serial.println("Temperature "+String(temperature)+ " Humidity "+String(humidity)+ " Heat Index "+String(heat_index));
-//  http.begin("http://3388653d.ngrok.io/iot/crud/alert/1/0"); 
+//  http.begin("http://3388653d.ngrok.io/predictor/"+String(temperature)+"/"+String(humidity)+"/"+String(heat_index)); 
 //  http.addHeader("Content-Type", "text/plain");             //Specify content-type header 
 //  http.POST("POSTING from ESP32"); 
 }
