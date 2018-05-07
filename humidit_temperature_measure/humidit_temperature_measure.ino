@@ -5,8 +5,8 @@
 #define DHTTYPE DHT11   // DHT 11
 
 // Wifi credentials
-const char* ssid = "xxxxxxxxxxx";
-const char* password =  "xxxxxxxxxx";
+const char* ssid = "Makao";
+const char* password =  "Lwanga67!";
 
 HTTPClient http;
 
@@ -29,9 +29,9 @@ void setup() {
 void send_to_server(float temperature, float humidity,float heat_index){
   // print to serial monitor console
   Serial.println("Temperature "+String(temperature)+ " Humidity "+String(humidity)+ " Heat Index "+String(heat_index));
-//  http.begin("http://3388653d.ngrok.io/predictor/"+String(temperature)+"/"+String(humidity)+"/"+String(heat_index)); 
+//  http.begin("http://125937ae.ngrok.io/shantel/backend/arduino/insert_temp_hum/"+String(temperature)+"/"+String(humidity)+"/"+String(heat_index));  
 //  http.addHeader("Content-Type", "text/plain");             //Specify content-type header 
-//  http.POST("POSTING from ESP32"); 
+//  http.POST("POSTING from ESP32");
 }
 
 void loop() {
