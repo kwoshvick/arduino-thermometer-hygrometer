@@ -7,13 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SB Admin - Start Bootstrap Template</title>
+  <title><?php echo $title;?></title>
   <!-- Bootstrap core CSS-->
   <link href="<?php echo base_url('assets/template/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url('assets/template/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="<?php echo base_url('assets/template/css/sb-admin.css')?>" rel="stylesheet">
+
+    <link href="<?php echo base_url('assets/template/vendor/datatables/dataTables.bootstrap4.css')?>" rel="stylesheet">
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -52,10 +55,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="login.html">Add farmer</a>
+              <a href="<?php echo base_url('users/addfarmer')?>">Add farmer</a>
             </li>
             <li>
-              <a href="register.html">Search Farmer</a>
+              <a href="<?php echo base_url('users/searchFarmer')?>">Search Farmer</a>
             </li>
           </ul>
         </li>
@@ -80,15 +83,13 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Dashboard</a>
+          <a href=""><?php echo $breadcrumb?> </a>
         </li>
-        <li class="breadcrumb-item active">Blank Page</li>
       </ol>
       <div class="row">
         <div class="col-12">
-          <h1>Blank</h1>
-          <p>This is an example of a blank page that you can use as a starting point for creating new ones.</p>
-        </div>
+            <?php $this->load->view($view);?>
+          </div>
       </div>
     </div>
     <!-- /.container-fluid-->
@@ -117,11 +118,26 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="<?php echo base_url('login/logout')?>">Logout</a>
+            <a class="btn btn-primary" href="<?php echo base_url('general/logout')?>">Logout</a>
           </div>
         </div>
       </div>
     </div>
+
+      <script>
+          window.setTimeout(function () {
+              $(".alert-success").fadeTo(500, 0).slideUp(500, function () {
+                  $(this).remove();
+              });
+          }, 5000);
+
+          window.setTimeout(function () {
+              $(".alert-danger").fadeTo(500, 0).slideUp(500, function () {
+                  $(this).remove();
+              });
+          }, 5000);
+      </script>
+
     <!-- Bootstrap core JavaScript-->
     <script src="<?php echo base_url('assets/template/vendor/jquery/jquery.min.js')?>"></script>
     <script src="<?php echo base_url('assets/template/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
@@ -129,6 +145,13 @@
     <script src="<?php echo base_url('assets/template/vendor/jquery-easing/jquery.easing.min.js')?>"></script>
     <!-- Custom scripts for all pages-->
     <script src="<?php echo base_url('assets/template/js/sb-admin.min.js')?>"></script>
+
+
+      <script src="<?php echo base_url('assets/template/vendor/datatables/jquery.dataTables.js')?>"></script>
+      <script src="<?php echo base_url('assets/template/vendor/datatables/dataTables.bootstrap4.js')?>"></script>
+      <!-- Custom scripts for all pages-->
+      <!-- Custom scripts for this page-->
+      <script src="<?php echo base_url('assets/template/js/sb-admin-datatables.min.js')?>"></script>
   </div>
 </body>
 

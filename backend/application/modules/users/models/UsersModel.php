@@ -18,45 +18,14 @@ class UsersModel extends CI_Model
         }
     }
 
-    public function checkLocation($location)
+    public function checkPhone($phone)
     {
-        $qry = $this->db->select('location_name')->from('location')->where('location_name', $location)->get();
+        $qry = $this->db->select('phone')->from('farmer')->where('phone', $phone)->get();
         if ($qry->num_rows() > 0) {
             return true;
         } else {
             return false;
         }
     }
-
-    public function getField($table, $condition, $field)
-    {
-        $this->db->select($field);
-        $this->db->from($table);
-        $this->db->where($condition);
-        $query = $this->db->get();
-        $data = $query->result();
-        return $data;
-    }
-
-    public function searchUser(){
-        $this->db->select('*');
-        $this->db->from('admin');
-        $this->db->join('location', 'location.location_id = admin.location_id');;
-        $query = $this->db->get();
-        $data = $query->result();
-        return $data;
-    }
-
-    public function getUser($condition){
-        $this->db->select('*');
-        $this->db->from('admin');
-        $this->db->join('admin_roles', 'admin_roles.admin_role_id = admin.admin_role_id');
-        $this->db->join('location', 'location.location_id = admin.location_id');
-        $this->db->where($condition);
-        $query = $this->db->get();
-        $data = $query->result();
-        return $data;
-    }
-
 
 }
