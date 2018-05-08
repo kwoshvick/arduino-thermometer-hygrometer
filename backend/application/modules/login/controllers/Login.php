@@ -51,5 +51,9 @@ class Login extends MX_Controller
         }
     }
 
+    public function index2(){
+        $this->load->view('general/template');
+    }
+
 
 }

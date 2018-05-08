@@ -1,510 +1,190 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title><?php echo $title;?></title>
-    <!-- Favicon-->
-    <link rel="icon" href="<?php echo base_url('assets/favicon.ico')?>" type="image/x-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-
-<!--
-
-
-
-    <!-- Bootstrap Core Css -->
-    <link href="<?php echo base_url('assets/plugins/bootstrap/css/bootstrap.css')?>" rel="stylesheet">
-
-    <!-- Waves Effect Css -->
-    <link href="<?php echo base_url('assets/plugins/node-waves/waves.css')?>" rel="stylesheet" />
-
-    <!-- Sweet Alert Css -->
-    <link href="<?php echo base_url('assets/plugins/sweetalert/sweetalert.css')?>" rel="stylesheet" />
-
-    <!-- Bootstrap Material Datetime Picker Css -->
-    <link href="<?php echo base_url('assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css')?>" rel="stylesheet" />
-
-    <!-- Bootstrap Select Css -->
-    <link href="<?php echo base_url('assets/plugins/bootstrap-select/css/bootstrap-select.css')?>" rel="stylesheet" />
-
-    <!-- Animation Css -->
-    <link href="<?php echo base_url('assets/plugins/animate-css/animate.css')?>" rel="stylesheet" />
-
-    <!-- Preloader Css -->
-    <link href="<?php echo base_url('assets/plugins/material-design-preloader/md-preloader.css')?>" rel="stylesheet" />
-
-    <!-- Custom Css -->
-    <link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet">
-
-    <!-- Wait Me Css -->
-    <link href="<?php echo base_url('assets/plugins/waitme/waitMe.css')?>" rel="stylesheet" />
-
-    <!-- JQuery DataTable Css -->
-    <link href="<?php echo base_url('assets/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css')?>" rel="stylesheet">
-
-    <!-- Morris Chart Css-->
-    <link href="<?php echo base_url('assets/plugins/morrisjs/morris.css')?>" rel="stylesheet" />
-
-    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="<?php echo base_url('assets/css/themes/all-themes.css')?>" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
+  <!-- Bootstrap core CSS-->
+  <link href="<?php echo base_url('assets/template/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="<?php echo base_url('assets/template/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="<?php echo base_url('assets/template/css/sb-admin.css')?>" rel="stylesheet">
 </head>
 
-<body class="theme-red" >
-    <!-- Page Loader -->
-    <div class="page-loader-wrapper">
-        <div class="loader">
-            <div class="md-preloader pl-size-md">
-                <svg viewbox="0 0 75 75">
-                    <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
-                </svg>
-            </div>
-            <p>Please wait...</p>
-        </div>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="">FAW</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="charts.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Charts</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="tables.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Components</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="navbar.html">Navbar</a>
+            </li>
+            <li>
+              <a href="cards.html">Cards</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Example Pages</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+            <li>
+              <a href="login.html">Login Page</a>
+            </li>
+            <li>
+              <a href="register.html">Registration Page</a>
+            </li>
+            <li>
+              <a href="forgot-password.html">Forgot Password Page</a>
+            </li>
+            <li>
+              <a href="blank.html">Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Menu Levels</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+              <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
     </div>
-    <!-- #END# Page Loader -->
-    <!-- Overlay For Sidebars -->
-    <div class="overlay"></div>
-    <!-- #END# Overlay For Sidebars -->
-
-    <!-- #END# Search Bar -->
-    <!-- Top Bar -->
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="<?php echo base_url('dashboard/')?>">
-                    Call Us Send Us</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Notifications -->
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            <i class="material-icons">notifications</i>
-                            <span class="label-count">7</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">NOTIFICATIONS</li>
-                            <li class="body">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-light-green">
-                                                <i class="material-icons">person_add</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>12 new members joined</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 14 mins ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-cyan">
-                                                <i class="material-icons">add_shopping_cart</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>4 sales made</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 22 mins ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-red">
-                                                <i class="material-icons">delete_forever</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>Nancy Doe</b> deleted account</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-orange">
-                                                <i class="material-icons">mode_edit</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>Nancy</b> changed name</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 2 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-blue-grey">
-                                                <i class="material-icons">comment</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>John</b> commented your post</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 4 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-light-green">
-                                                <i class="material-icons">cached</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>John</b> updated status</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-purple">
-                                                <i class="material-icons">settings</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>Settings updated</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> Yesterday
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer">
-                                <a href="javascript:void(0);">View All Notifications</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- #END# Notifications -->
-                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
-                </ul>
-            </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Blank Page</li>
+      </ol>
+      <div class="row">
+        <div class="col-12">
+          <h1>Blank</h1>
+          <p>This is an example of a blank page that you can use as a starting point for creating new ones.</p>
         </div>
-    </nav>
-    <!-- #Top Bar -->
-    <section>
-        <!-- Left Sidebar -->
-        <aside id="leftsidebar" class="sidebar">
-            <!-- User Info -->
-            <div class="user-info">
-                <div class="image">
-                    <img src="<?php echo base_url('assets/images/profile.png')?>" width="48" height="48" alt="User" />
-                </div>
-                <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php  ?></div>
-                    <div class="email"><?php  ?></div>
-                    <div class="btn-group user-helper-dropdown">
-                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="<?php echo base_url('users/profile')?>"><i class="material-icons">person</i>Profile</a></li>
-                            <li><a href="<?php echo base_url('users/changePassword')?>"><i class="material-icons">lock</i>Change Password</a></li>
-                            <li role="seperator" class="divider"></li>
-                            <li><a href="<?php echo base_url('general/logout')?>"><i class="material-icons">input</i>Log Out</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- #User Info -->
-            <!-- Menu -->
-            <div class="menu">
-                <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
-                    <li>
-                        <a href="<?php echo base_url('dashboard/')?>">
-                            <i class="material-icons">dashboard</i>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">account_box</i>
-                            <span>Farmer</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="<?php echo base_url('order/newOrder')?>">Add Farmer</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url('order/incompleteOrder')?>">Search</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">attach_money</i>
-                            <span>Payment</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="<?php echo base_url('payment/validateMpesa')?>">Validate Mpesa</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url('payment/unPaidOrder')?>">Receive Payments</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">layers</i>
-                            <span>Order List</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="<?php echo base_url('order/completeOrder')?>">Complete Orders</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url('order/dispatchedOrderList')?>">Dispatched Orders</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url('order/canceledOrderList')?>">Canceled Orders</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">insert_chart</i>
-                            <span>Reports</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="<?php echo base_url('reports/completeOrdersReport')?>">Complete Orders</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url('reports/dispatchedOrdersReport')?>">Dispatched Orders</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url('reports/canceledOrdersReport')?>">Canceled Orders</a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-
-                </ul>
-            </div>
-            <!-- #Menu -->
-            <!-- Footer -->
-            <div class="legal">
-                <div class="copyright">
-                    &copy; 2017 <a href="javascript:void(0);">ArmyWorm Invasion
-                    </a>.
-                </div>
-                <div class="version">
-                    <b>Version: </b> 1.0.0
-                </div>
-            </div>
-            <!-- #Footer -->
-        </aside>
-        <!-- #END# Left Sidebar -->
-        <!-- Right Sidebar -->
-        <!-- #END# Right Sidebar -->
-    </section>
-
-    <section class="content">
-        <div class="container-fluid">
-            <div class="block-header">
-                <ol class="breadcrumb breadcrumb-col-green">
-                    <li><a href="javascript:void(0);"><i class="material-icons">home</i> Home</a></li>
-                    <li><a href="javascript:void(0);"><?php echo $breadcrumb; ?></a></li>
-                </ol>
-                <?php
-                $this->load->view($view);
-                ?>
-            </div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>FAW System</small>
         </div>
-    </section>
-
-    <!-- Jquery Core Js -->
-    <script src="<?php echo base_url('assets/plugins/jquery/jquery.min.js')?>"></script>
-
-    <!-- Jquery Validation Plugin Css -->
-    <script src="<?php echo base_url('assets/plugins/jquery-validation/jquery.validate.js')?>"></script>
-
-    <!-- JQuery Steps Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/jquery-steps/jquery.steps.js')?>"></script>
-
-    <!-- Sweet Alert Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/sweetalert/sweetalert.min.js')?>"></script>
-
-    <!-- Bootstrap Core Js -->
-    <script src="<?php echo base_url('assets/plugins/bootstrap/js/bootstrap.js')?>"></script>
-
-    <!-- Select Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/bootstrap-select/js/bootstrap-select.js')?>"></script>
-
-    <!-- Slimscroll Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/jquery-slimscroll/jquery.slimscroll.js')?>"></script>
-
-    <!-- Waves Effect Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/node-waves/waves.js')?>"></script>
-
-    <!-- Autosize Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/autosize/autosize.js')?>"></script>
-
-    <!-- Moment Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/momentjs/moment.js')?>"></script>
-
-    <!-- Bootstrap Material Datetime Picker Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js')?>"></script>
-
-
-    <!-- Bootstrap Notify Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/bootstrap-notify/bootstrap-notify.js')?>"></script>
-
-    <!-- Morris Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/raphael/raphael.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/morrisjs/morris.js')?>"></script>
-
-
-    <!-- Custom Js -->
-    <script src="<?php echo base_url('assets/js/admin.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/pages/tables/jquery-datatable.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/pages/ui/notifications.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/pages/forms/form-wizard.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/pages/forms/basic-form-elements.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/pages/index.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/pages/forms/advanced-form-elements.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/pages/charts/morris.js')?>"></script>
-
-
-    <!-- Jquery CountTo Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/jquery-countto/jquery.countTo.js')?>"></script>
-
-    <!-- Morris Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/raphael/raphael.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/morrisjs/morris.js')?>"></script>
-
-    <!-- ChartJs -->
-    <script src="<?php echo base_url('assets/plugins/chartjs/Chart.bundle.js')?>"></script>
-
-    <!-- Flot Charts Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/flot-charts/jquery.flot.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/flot-charts/jquery.flot.resize.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/flot-charts/jquery.flot.pie.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/flot-charts/jquery.flot.categories.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/flot-charts/jquery.flot.time.js')?>"></script>
-
-    <!-- Sparkline Chart Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/jquery-sparkline/jquery.sparkline.js')?>"></script>
-
-    <!-- Demo Js -->
-    <script src="<?php echo base_url('assets/js/demo.js')?>"></script>
-
-    <!-- Jquery DataTable Plugin Js -->
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/jquery.dataTables.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/extensions/export/buttons.flash.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/extensions/export/jszip.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/extensions/export/pdfmake.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/extensions/export/vfs_fonts.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/extensions/export/buttons.html5.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/plugins/jquery-datatable/extensions/export/buttons.print.min.js')?>"></script>
-
-
-
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="<?php echo base_url('assets/template/vendor/jquery/jquery.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/template/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="<?php echo base_url('assets/template/vendor/jquery-easing/jquery.easing.min.js')?>"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="<?php echo base_url('assets/template/js/sb-admin.min.js')?>"></script>
+  </div>
 </body>
-
-<script>
-    window.setTimeout(function () {
-        $(".alert-success").fadeTo(500, 0).slideUp(500, function () {
-            $(this).remove();
-        });
-    }, 5000);
-
-    window.setTimeout(function () {
-        $(".alert-danger").fadeTo(500, 0).slideUp(500, function () {
-            $(this).remove();
-        });
-    }, 5000);
-</script>
-
-<script>
-
-    $.fn.dataTableExt.afnFiltering.push(
-        function( oSettings, aData, iDataIndex ) {
-            var iFini = document.getElementById('min').value;
-            var iFfin = document.getElementById('max').value;
-
-            console.log(iFini);
-
-
-            var iStartDateCol = 6;
-            var iEndDateCol = 7;
-
-            iFini=iFini.substring(6,10) + iFini.substring(3,5)+ iFini.substring(0,2);
-            iFfin=iFfin.substring(6,10) + iFfin.substring(3,5)+ iFfin.substring(0,2);
-
-            var datofini=aData[iStartDateCol].substring(6,10) + aData[iStartDateCol].substring(3,5)+ aData[iStartDateCol].substring(0,2);
-            var datoffin=aData[iEndDateCol].substring(6,10) + aData[iEndDateCol].substring(3,5)+ aData[iEndDateCol].substring(0,2);
-
-            if ( iFini === "" && iFfin === "" )
-            {
-                return true;
-            }
-            else if ( iFini <= datofini && iFfin === "")
-            {
-                return true;
-            }
-            else if ( iFfin >= datoffin && iFini === "")
-            {
-                return true;
-            }
-            else if (iFini <= datofini && iFfin >= datoffin)
-            {
-                return true;
-            }
-            return false;
-        }
-    );
-    /* Custom filtering function which will filter data in column four between two values */
-//    $.fn.dataTable.ext.search.push(
-//        function( settings, data, dataIndex ) {
-//            var min = $('#min').val() ;
-//            var max = $('#max').val() ;
-//            var age = data[1] ; // use data for the age column
-//
-//            console.log(typeof (age));
-//
-////            if ( ( min == '' && max == '' ) ||
-////                ( min == '' && age <= max ) ||
-////                ( min <= age && '' == max ) ||
-////                ( min <= age && age <= max ) )
-////            {
-////                return true;
-////            }
-//            if ( ( min == '' && max == '' ) ||
-//                ( min == age  ) )
-//            {
-//                return true;
-//            }
-//            return false;
-//        }
-//    );
-
-//    $(document).ready(function() {
-//        var table = $('#example').DataTable();
-//
-//        // Event listener to the two range filtering inputs to redraw on input
-//        $('#min, #max').keyup( function() {
-//            table.draw();
-//        } );
-//    } );
-</script>
 
 </html>
