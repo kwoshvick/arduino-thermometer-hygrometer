@@ -29,9 +29,9 @@ void setup() {
 void send_to_server(float temperature, float humidity,float heat_index){
   // print to serial monitor console
   Serial.println("Temperature "+String(temperature)+ " Humidity "+String(humidity)+ " Heat Index "+String(heat_index));
-//  http.begin("http://125937ae.ngrok.io/shantel/backend/arduino/insert_temp_hum/"+String(temperature)+"/"+String(humidity)+"/"+String(heat_index));  
-//  http.addHeader("Content-Type", "text/plain");             //Specify content-type header 
-//  http.POST("POSTING from ESP32");
+  http.begin("http://cbe3c0f4.ngrok.io/arduino/backend/arduino/insert_temp_hum/"+String(temperature)+"/"+String(humidity)+"/"+String(heat_index));  
+  http.addHeader("Content-Type", "text/plain");             //Specify content-type header 
+  http.POST("POSTING from ESP32"); 
 }
 
 void loop() {

@@ -86,90 +86,7 @@
             <path>
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="general" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="general" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="general" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="general" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="users" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="users" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="users" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="users" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -187,11 +104,11 @@
       <recent name="$PROJECT_DIR$/application/modules/welcome/controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/db" />
       <recent name="$PROJECT_DIR$/application/modules/users/views" />
       <recent name="$PROJECT_DIR$/application/libraries" />
       <recent name="$PROJECT_DIR$/application/modules" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/assets/db" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -226,24 +143,24 @@
       <workItem from="1525713235137" duration="3892000" />
       <workItem from="1525794901055" duration="57000" />
       <workItem from="1525794973342" duration="68000" />
-      <workItem from="1525795133676" duration="8682000" />
+      <workItem from="1525795133676" duration="9368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25521000" />
+    <option name="totallyTimeSpent" value="26207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="709" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33103448" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31551725" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31551725" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -567,6 +484,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/db/temp_hum.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2160">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
