@@ -55,6 +55,18 @@ class DashboardModel extends CI_Model
         return $data;
     }
 
+    public function _selectChart()
+    {
+        $this->db->select('*');
+        $this->db->from('temperature_humidity');
+        $this->db->order_by('temp_hum_id', "desc");
+        $this->db->limit(100);
+        $query = $this->db->get();
+        $data = $query->result();
+        return $data;
+    }
+
+
 
 
 
