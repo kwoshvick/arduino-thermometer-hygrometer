@@ -6,7 +6,7 @@
 
 // Wifi credentials
 const char* ssid = "Makao";
-const char* password =  "Lwanga67!";
+const char* password =  "!";
 
 HTTPClient http;
 
